@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rhoen Mark A. Sutin — Online CV</title>
+  <meta name="description" content="Online CV of Rhoen Mark A. Sutin — Customer-oriented professional with strong communication and computer skills." />
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --muted:#94a3b8;
+      --text:#e5e7eb;
+      --accent:#22d3ee;
+      --pill:#1f2937;
+      --border:#1f2937;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans","Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";
+      background:radial-gradient(1200px 600px at 20% -10%,#0ea5e9 0%, transparent 50%),
+                 radial-gradient(1200px 600px at 120% 10%,#22c55e33 0%, transparent 50%),
+                 var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    .wrap{max-width:980px; margin:48px auto; padding:0 20px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:22px}
+    .name{font-size:clamp(28px,4.5vw,44px); font-weight:800; letter-spacing:.3px}
+    .tag{display:inline-block; font-size:14px; color:var(--muted)}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--border); border-radius:18px; box-shadow:var(--shadow);
+    }
+    .hero{padding:24px; display:flex; align-items:center; gap:20px}
+    .profile-pic{
+      flex-shrink:0;
+      width:120px; height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid var(--accent);
+      box-shadow:0 4px 10px rgba(0,0,0,.4);
+    }
+    .summary{font-size:17px}
+    .contact{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
+    .contact a{color:var(--text); text-decoration:none; border:1px solid var(--border); background:var(--pill); padding:8px 10px; border-radius:999px; font-size:14px}
+    .contact a:hover{outline:2px solid #22d3ee55}
+    .btns{display:flex; gap:10px}
+    .btn{cursor:pointer; border:none; padding:10px 14px; border-radius:12px; background:var(--accent); color:#083344; font-weight:700}
+    .btn.secondary{background:transparent; color:var(--text); border:1px solid var(--border)}
+    .row{display:grid; grid-template-columns:1.2fr .8fr; gap:22px}
+    @media (max-width: 840px){ .row{grid-template-columns:1fr} .hero{flex-direction:column; align-items:flex-start} }
+    h2{font-size:clamp(18px,2.8vw,22px); margin:0 0 10px}
+    .section{padding:22px}
+    .skills{display:flex; flex-wrap:wrap; gap:10px; margin:10px 0 0}
+    .pill{background:var(--pill); border:1px solid var(--border); padding:8px 12px; border-radius:999px; font-size:14px}
+    .edu-item{display:grid; grid-template-columns: 1fr auto; gap:8px; padding:14px; border:1px solid var(--border); border-radius:14px; margin:10px 0; background:rgba(255,255,255,.02)}
+    .edu-item .place{font-weight:700}
+    .edu-item .degree{color:var(--muted)}
+    footer{margin:26px 0 10px; text-align:center; color:var(--muted); font-size:13px}
+    @media print{
+      body{background:white; color:#111827}
+      .card{box-shadow:none; border-color:#e5e7eb}
+      .btns, .tag{display:none !important}
+      a[href]:after{content:" (" attr(href) ")"; font-weight:normal}
+      .wrap{margin:0; max-width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="name">Rhoen Mark A. Sutin</div>
+        <span class="tag">Online CV</span>
+      </div>
+      <div class="btns no-print">
+        <button class="btn" onclick="window.print()">Download PDF</button>
+        <button class="btn secondary" onclick="navigator.clipboard.writeText(location.href).then(()=>alert('Link copied!'))">Copy Link</button>
+      </div>
+    </header>
+
+    <section class="card hero" aria-labelledby="about-title">
+      <img src="bd977020-c218-4813-97ae-59ca240f1c6e.png" alt="Profile Photo" class="profile-pic">
+      <div>
+        <h2 id="about-title">About Me</h2>
+        <p class="summary">
+          Customer-oriented and motivated professional with strong communication skills, computer literacy, and a creative flair for decorating. Background in hospitality and education studies. Eager to contribute in customer service, hospitality, and administrative roles.
+        </p>
+        <div class="contact" aria-label="Contact information">
+          <a href="tel:+639853326423" title="Call">📱 +63 985 332 6423</a>
+          <a href="mailto:mark_cueshe@yahoo.com" title="Email">📧 mark_cueshe@yahoo.com</a>
+          <a href="https://maps.google.com/?q=Iligan%20City%2C%20Philippines%209200" target="_blank" rel="noopener" title="Open location">📍 Iligan City, Philippines 9200</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <section class="card section" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skills">
+          <span class="pill">Customer-oriented mindset</span>
+          <span class="pill">Computer literate</span>
+          <span class="pill">Communication skills</span>
+          <span class="pill">Decorating & creative presentation</span>
+        </div>
+      </section>
+
+      <section class="card section" aria-labelledby="extras-title">
+        <h2 id="extras-title">Quick Facts</h2>
+        <ul class="muted" style="margin:0; padding-left:18px">
+          <li>Nationality: Filipino</li>
+          <li>Open to: Customer Service, Hospitality, Admin roles</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="card section" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+
+      <div class="edu-item">
+        <div>
+          <div class="place">Santa Monica Institute of Technology</div>
+          <div class="degree">Bachelor of Elementary Education — 2nd Year Level</div>
+        </div>
+        <div class="muted">2nd Semester, 2016–2017</div>
+      </div>
+
+      <div class="edu-item">
+        <div>
+          <div class="place">STI College</div>
+          <div class="degree">Hospitality & Restaurant Services — 1st Year Level</div>
+        </div>
+        <div class="muted">1st Semester, 2013–2014</div>
+      </div>
+    </section>
+
+    <section class="card section" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <p class="muted" style="margin:0">Add your work history here when ready. Example format:</p>
+      <ul class="muted" style="margin:8px 0 0; padding-left:18px">
+        <li><strong>Job Title</strong> — Company (Dates)</li>
+        <li>• Your key responsibilities and achievements</li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Rhoen Mark A. Sutin — CV
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
